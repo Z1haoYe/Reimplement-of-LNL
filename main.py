@@ -6,8 +6,6 @@ import matplotlib.pyplot as plt
 rho_pos = 0.2
 rho_neg = 0.2
 raw_data, noise_data = datag.generate_data(5000, rho_pos, rho_neg)
-# raw_data, n1, n2 = datag.random_data(5000)
-# noise_data = datag.add_noise(raw_data, 0.2, 0.2)
 true_dict = {}
 for i in raw_data:
   true_dict[(i[1], i[2])] = i[0]
